@@ -1,0 +1,130 @@
+//Find a node with Label
+====================================
+MATCH (me:Developer) 
+WHERE me.Name = "Ajeet Singh" 
+RETURN me
+//Find a node with index
+====================================
+START me=node:NeoSampleNodeIndex(Name="Ajeet Singh")
+return me
+
+//Find all employee by relationship
+====================================
+MATCH (s:Skill)<-[:HAS_SKILL]-(n)
+WHERE s.Name = "Java" 
+return n;
+
+//Find all employee by relationship and filter by label
+=========================================================
+Query 1:
+=======
+MATCH (p:Skill) 
+WHERE p.Name = "Java" 
+WITH p
+MATCH (p)<-[:HAS_SKILL]-(n)
+WHERE n:QA
+RETURN n;
+
+Query 2:
+=========
+MATCH (s:Skill)<-[r:HAS_SKILL]-(n)
+WHERE s.Name = "Java" 
+WITH n, r
+WHERE n:QA
+return r;
+
+
+//Find relationships of all employee by relationship
+====================================
+MATCH (p:Skill) 
+WHERE p.Name = "Java" 
+WITH p
+MATCH (p)<-[:HAS_SKILL]-(n)
+RETURN n
+
+//Query for any one from the list
+Query 1:
+===========
+MATCH (s1:Skill)<-[r1:HAS_SKILL]-(n1)
+WHERE s1.Name ='REST' 
+WITH n1, r1
+MATCH (s2:Skill)<-[r2:HAS_SKILL]-(n1)
+WHERE s2.Name ='SOAP' 
+WITH n1, r1, r2
+MATCH (s3:Skill)<-[r3:HAS_SKILL]-(n1)
+WHERE s3.Name ='Design' 
+return r1, r2, r3;
+
+Query 2:
+============
+MATCH (s1:Skill)<-[r1:HAS_SKILL]-(n)-[r2:HAS_SKILL]->(s2:Skill)
+WHERE s1.Name ='REST' and s2.Name ='SOAP' 
+return r1, r2
+
+Query 4: Find all  skills
+========================
+START me=node:NeoSampleNodeIndex(Name="Ajeet Singh")
+MATCH me-[r:HAS_SKILL]->()
+return r;
+
+Query 4: Find all team members of ateam
+=========================================
+MATCH (s:Team)<-[r:MEMBER_OF]-(n)
+WHERE s.Name = "Spatial Server" 
+WITH n, r
+WHERE n:QA
+return r;
+
+Query 4: Find all team members involved between two teams
+=========================================
+MATCH (s1:Team)<-[r1:MEMBER_OF]-(n)-[r2:MEMBER_OF]->(s2:Team)
+WHERE s1.Name ='Spatial Server' and s2.Name ='RJS' 
+return r1, r2;
+
+MATCH (s1:Skill)<-[r1:HAS_SKILL {Years:5}]-(n)-[r2:HAS_SKILL {Years:5}]->(s1:Skill)
+WHERE s1.Name ='Java' and s2.Name ='SOAP' 
+return r1, r2
+
+Query 5:
+===========================
+START n=node:NeoSampleNodeIndex('*:*')
+MATCH (n)-[r:HAS_SKILL]->(x)
+RETURN n.Name, COUNT(r)
+ORDER BY COUNT(r) DESC
+LIMIT 10
+
+
+MATCH (me:Developer) 
+WHERE me.Name = "Balkrishan Nagpal" 
+with me
+MATCH (me)-[r:HAS_SKILL]->(n) RETURN r
+
+
+MATCH (me:Developer) 
+WHERE me.Name = "Balkrishan Nagpal" 
+with me
+MATCH (me)-[r]->(n) RETURN r
+
+//Get all living areas of team members
+==============================================
+MATCH (t:Team {Name: 'Spatial Server'})<-[r1:MEMBER_OF]-(n)-[r2:LIVING]->(m)
+return DISTINCT m.Name AS Region, count(n) as Count ORDER BY Count DESC ;
+
+
+//Get nearest hospitals, schools, malls from a regions
+=======================================================
+MATCH (t:Team {Name: 'Spatial Server'})<-[r1:MEMBER_OF]-(n)-[r2:LIVING]->(m) 
+WITH DISTINCT m 
+MATCH (x)<-[r3:NEAREST]-(m) 
+return r3;
+
+//Query - recommand an area on behalf of distance of nearest hospitals
+MATCH (t:Team {Name: 'Spatial Server'})<-[r1:MEMBER_OF]-(n)-[r2:LIVING]->(m)
+WITH DISTINCT m
+MATCH (m)-[r:NEAREST]->() 
+WITH m.Name as Name, SUM(r.Distance) AS l 
+return Name, l/100 as Cost  ORDER BY Cost DESC;
+
+START r=relationship(*)
+where r.AccidentCount > 0
+return r

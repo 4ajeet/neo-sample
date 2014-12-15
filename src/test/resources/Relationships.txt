@@ -1,0 +1,155 @@
+//SS
+Source:Abhay Kumar (Mapinfo),	Destination: Spatial Server, Duration: 1,	RelationshipType: MEMBER_OF
+Source:Abhishek Upadhyay,	Destination: Spatial Server, Duration: 1,	RelationshipType: MEMBER_OF
+Source:Adil Ali,		Destination: Spatial Server, Duration: 3,	RelationshipType: MEMBER_OF
+Source:Ajeet Singh,		Destination: Spatial Server, Duration: 4,	RelationshipType: MEMBER_OF
+Source:Alok Sarawat,		Destination: Spatial Server, Duration: 5,	RelationshipType: MEMBER_OF
+Source:Anurag Mudgal,		Destination: Spatial Server, Duration: 4,	RelationshipType: MEMBER_OF
+Source:Atul Kumar Gupta,	Destination: Spatial Server, Duration: 2,	RelationshipType: MEMBER_OF
+Source:Balkrishan Nagpal,	Destination: Spatial Server, Duration: 2,	RelationshipType: MEMBER_OF
+Source:Dapinder Singh,		Destination: Spatial Server, Duration: 1,	RelationshipType: MEMBER_OF
+Source:Deepak Rana,		Destination: Spatial Server, Duration: 3,	RelationshipType: MEMBER_OF
+Source:Dhananjay Kumar Pandey,	Destination: Spatial Server, Duration: 0.3,	RelationshipType: MEMBER_OF
+Source:Mani Khanuja,		Destination: Spatial Server, Duration: 0.1,	RelationshipType: MEMBER_OF
+Source:Mukesh Upreti,		Destination: Spatial Server, Duration: 0.1,	RelationshipType: MEMBER_OF
+Source:Nishtha Goel,		Destination: Spatial Server, Duration: 1,	RelationshipType: MEMBER_OF
+Source:Prashant Sood,		Destination: Spatial Server, Duration: 5,	RelationshipType: MEMBER_OF
+Source:Rahul Kumar,		Destination: Spatial Server, Duration: 1,	RelationshipType: MEMBER_OF
+Source:Rohan Punia,		Destination: Spatial Server, Duration: 5,	RelationshipType: MEMBER_OF
+Source:Roma Jain,		Destination: Spatial Server, Duration: 0.3,	RelationshipType: MEMBER_OF
+Source:Vamsi Mohan Dosapati,	Destination: Spatial Server, Duration: 1,	RelationshipType: MEMBER_OF
+Source:Varsha Maheshwari,	Destination: Spatial Server, Duration: 2,	RelationshipType: MEMBER_OF
+//RJS
+Source:Anushree Acharjee,	Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Balkrishan Nagpal,	Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Garima Bhalla,		Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Garvit Jain,		Destination:RJS,	Duration: 1,	RelationshipType: MEMBER_OF
+Source:Lokesh Tuteja,		Destination:RJS,	Duration: 1,	RelationshipType: MEMBER_OF
+Source:Manoj Kumar,		Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Mehnaaz Zahir,		Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Rohan Punia,		Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Roma Jain,		Destination:RJS,	Duration: 0.3,	RelationshipType: MEMBER_OF
+Source:Shivani Singh,		Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Umesh Bhandari,		Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Vamsi Mohan Dosapati,	Destination:RJS,	Duration: 3,	RelationshipType: MEMBER_OF
+//Fun
+Source:Adil Ali,		Destination: Fun Committee,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Garima Bhalla,		Destination: Fun Committee,	Duration: 3,	RelationshipType: MEMBER_OF
+Source:Varsha Maheshwari,	Destination: Fun Committee,	Duration: 2,	RelationshipType: MEMBER_OF
+//Java skills
+Source:Abhay Kumar (Mapinfo),	Destination: Java, Years: 8,		RelationshipType: HAS_SKILL
+Source:Abhishek Upadhyay,	Destination: Java, Years: 7,		RelationshipType: HAS_SKILL
+Source:Adil Ali,		Destination: Java, Years: 5,		RelationshipType: HAS_SKILL
+Source:Ajeet Singh,		Destination: Java, Years: 8,		RelationshipType: HAS_SKILL
+Source:Alok Sarawat,		Destination: Java, Years: 10,	RelationshipType: HAS_SKILL
+Source:Anurag Mudgal,		Destination: Java, Years: 5,		RelationshipType: HAS_SKILL
+Source:Atul Kumar Gupta,	Destination: Java, Years: 8,		RelationshipType: HAS_SKILL
+Source:Balkrishan Nagpal,	Destination: Java, Years: 9,		RelationshipType: HAS_SKILL
+Source:Deepak Rana,		Destination: Java, Years: 6,		RelationshipType: HAS_SKILL
+Source:Dhananjay Kumar Pandey,	Destination: Java, Years: 5,		RelationshipType: HAS_SKILL
+Source:Mani Khanuja,		Destination: Java, Years: 7,		RelationshipType: HAS_SKILL
+Source:Mukesh Upreti,		Destination: Java, Years: 7,		RelationshipType: HAS_SKILL
+Source:Nishtha Goel,		Destination: Java, Years: 8,		RelationshipType: HAS_SKILL
+Source:Prashant Sood,		Destination: Java, Years: 8,		RelationshipType: HAS_SKILL
+Source:Rahul Kumar,		Destination: Java, Years: 7,		RelationshipType: HAS_SKILL
+Source:Rohan Punia,		Destination: Java, Years: 10,	RelationshipType: HAS_SKILL
+Source:Roma Jain,		Destination: Java, Years: 10,	RelationshipType: HAS_SKILL
+Source:Vamsi Mohan Dosapati,	Destination: Java, Years: 13,	RelationshipType: HAS_SKILL
+Source:Varsha Maheshwari,	Destination: Java, Years: 2,		RelationshipType: HAS_SKILL
+Source:Anushree Acharjee,	Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Balkrishan Nagpal,	Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Garima Bhalla,		Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Garvit Jain,		Destination:Java,	Years: 1,	RelationshipType: HAS_SKILL
+Source:Lokesh Tuteja,		Destination:Java,	Years: 1,	RelationshipType: HAS_SKILL
+Source:Manoj Kumar,		Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Mehnaaz Zahir,		Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Rohan Punia,		Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Shivani Singh,		Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Umesh Bhandari,		Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Vamsi Mohan Dosapati,	Destination:Java,	Years: 3,	RelationshipType: HAS_SKILL
+//QA
+Source:Varsha Maheshwari,	Destination: QA,   Years: 8,		RelationshipType: HAS_SKILL
+Source:Dapinder Singh,		Destination: QA,   Years: 5,		RelationshipType: HAS_SKILL
+Source:Manoj Kumar,		Destination: QA,   Years: 6,		RelationshipType: HAS_SKILL
+Source:Dapinder Singh,		Destination: QA,   Years: 5,		RelationshipType: HAS_SKILL
+//Design
+Source:Vamsi Mohan Dosapati,	Destination: Design, Years: 4,	RelationshipType: HAS_SKILL
+Source:Abhay Kumar (Mapinfo),	Destination: Design, Years: 1,	RelationshipType: HAS_SKILL
+Source:Alok Sarawat,		Destination: Design, Years: 2,	RelationshipType: HAS_SKILL
+//.Net
+Source:Adil Ali,		Destination:.Net,	Years: 2,	RelationshipType: HAS_SKILL
+Source:Garima Bhalla,		Destination:.Net,	Years: 2,	RelationshipType: HAS_SKILL
+Source:Garvit Jain,		Destination:.Net,	Years: 1,	RelationshipType: HAS_SKILL
+Source:Balkrishan Nagpal,	Destination:.Net,	Years: 2,	RelationshipType: HAS_SKILL
+Source:Deepak Rana,		Destination:.Net,	Years: 2,	RelationshipType: HAS_SKILL
+//GIS
+Source:Abhay Kumar (Mapinfo),	Destination: GIS, Years: 8,		RelationshipType: HAS_SKILL
+Source:Abhishek Upadhyay,	Destination: GIS, Years: 1,		RelationshipType: HAS_SKILL
+Source:Adil Ali,		Destination: GIS, Years: 5,		RelationshipType: HAS_SKILL
+Source:Ajeet Singh,		Destination: GIS, Years: 3,		RelationshipType: HAS_SKILL
+Source:Alok Sarawat,		Destination: GIS, Years: 10,		RelationshipType: HAS_SKILL
+Source:Anurag Mudgal,		Destination: GIS, Years: 3,		RelationshipType: HAS_SKILL
+Source:Atul Kumar Gupta,	Destination: GIS, Years: 1,		RelationshipType: HAS_SKILL
+Source:Balkrishan Nagpal,	Destination: GIS, Years: 2,		RelationshipType: HAS_SKILL
+Source:Dapinder Singh,		Destination: GIS, Years: 1,		RelationshipType: HAS_SKILL
+Source:Deepak Rana,		Destination: GIS, Years: 4,		RelationshipType: HAS_SKILL
+Source:Dhananjay Kumar Pandey,	Destination: GIS, Years: 0.6,	RelationshipType: HAS_SKILL
+Source:Mani Khanuja,		Destination: GIS, Years: 0.1,	RelationshipType: HAS_SKILL
+Source:Nishtha Goel,		Destination: GIS, Years: 1,		RelationshipType: HAS_SKILL
+Source:Prashant Sood,		Destination: GIS, Years: 5,		RelationshipType: HAS_SKILL
+Source:Rahul Kumar,		Destination: GIS, Years: 1,		RelationshipType: HAS_SKILL
+Source:Rohan Punia,		Destination: GIS, Years: 8,		RelationshipType: HAS_SKILL
+Source:Roma Jain,		Destination: GIS, Years: 10,		RelationshipType: HAS_SKILL
+Source:Vamsi Mohan Dosapati,	Destination: GIS, Years: 2,		RelationshipType: HAS_SKILL
+Source:Varsha Maheshwari,	Destination: GIS, Years: 2,		RelationshipType: HAS_SKILL
+//SOAP
+Source:Abhay Kumar (Mapinfo),	Destination: SOAP, Years: 8,		RelationshipType: HAS_SKILL
+Source:Abhishek Upadhyay,	Destination: SOAP, Years: 2,		RelationshipType: HAS_SKILL
+Source:Adil Ali,		Destination: SOAP, Years: 5,		RelationshipType: HAS_SKILL
+Source:Ajeet Singh,		Destination: SOAP, Years: 8,		RelationshipType: HAS_SKILL
+Source:Alok Sarawat,		Destination: SOAP, Years: 5,		RelationshipType: HAS_SKILL
+Source:Anurag Mudgal,		Destination: SOAP, Years: 3,		RelationshipType: HAS_SKILL
+Source:Atul Kumar Gupta,	Destination: SOAP, Years: 5,		RelationshipType: HAS_SKILL
+Source:Balkrishan Nagpal,	Destination: SOAP, Years: 8,		RelationshipType: HAS_SKILL
+Source:Deepak Rana,		Destination: SOAP, Years: 4,		RelationshipType: HAS_SKILL
+Source:Dhananjay Kumar Pandey,	Destination: SOAP, Years: 1,		RelationshipType: HAS_SKILL
+Source:Nishtha Goel,		Destination: SOAP, Years: 5,		RelationshipType: HAS_SKILL
+Source:Prashant Sood,		Destination: SOAP, Years: 5,		RelationshipType: HAS_SKILL
+Source:Rahul Kumar,		Destination: SOAP, Years: 5,		RelationshipType: HAS_SKILL
+Source:Rohan Punia,		Destination: SOAP, Years: 3,		RelationshipType: HAS_SKILL
+Source:Vamsi Mohan Dosapati,	Destination: SOAP, Years: 2,		RelationshipType: HAS_SKILL
+Source:Anushree Acharjee,	Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Balkrishan Nagpal,	Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Garima Bhalla,		Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Garvit Jain,		Destination:SOAP,	Years: 1,	RelationshipType: HAS_SKILL
+Source:Lokesh Tuteja,		Destination:SOAP,	Years: 1,	RelationshipType: HAS_SKILL
+Source:Manoj Kumar,		Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Mehnaaz Zahir,		Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Rohan Punia,		Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Shivani Singh,		Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Umesh Bhandari,		Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Vamsi Mohan Dosapati,	Destination:SOAP,	Years: 3,	RelationshipType: HAS_SKILL
+//REST
+Source:Anushree Acharjee,	Destination:REST,	Years: 1,	RelationshipType: HAS_SKILL
+Source:Balkrishan Nagpal,	Destination:REST,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Garima Bhalla,		Destination:REST,	Years: 1,	RelationshipType: HAS_SKILL
+Source:Manoj Kumar,		Destination:REST,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Rohan Punia,		Destination:REST,	Years: 3,	RelationshipType: HAS_SKILL
+Source:Umesh Bhandari,		Destination:REST,	Years: 2,	RelationshipType: HAS_SKILL
+Source:Vamsi Mohan Dosapati,	Destination:REST,	Years: 2,	RelationshipType: HAS_SKILL
+Source:Abhay Kumar (Mapinfo),	Destination: REST, Years: 8,		RelationshipType: HAS_SKILL
+Source:Abhishek Upadhyay,	Destination: REST, Years: 7,		RelationshipType: HAS_SKILL
+Source:Adil Ali,		Destination: REST, Years: 5,		RelationshipType: HAS_SKILL
+Source:Ajeet Singh,		Destination: REST, Years: 3,		RelationshipType: HAS_SKILL
+Source:Alok Sarawat,		Destination: REST, Years: 2,		RelationshipType: HAS_SKILL
+Source:Anurag Mudgal,		Destination: REST, Years: 5,		RelationshipType: HAS_SKILL
+Source:Atul Kumar Gupta,	Destination: REST, Years: 2,		RelationshipType: HAS_SKILL
+Source:Balkrishan Nagpal,	Destination: REST, Years: 3,		RelationshipType: HAS_SKILL
+Source:Deepak Rana,		Destination: REST, Years: 2,		RelationshipType: HAS_SKILL
+Source:Dhananjay Kumar Pandey,	Destination: REST, Years: 1,		RelationshipType: HAS_SKILL
+Source:Mukesh Upreti,		Destination: REST, Years: 1,		RelationshipType: HAS_SKILL
+Source:Nishtha Goel,		Destination: REST, Years: 3,		RelationshipType: HAS_SKILL
+Source:Prashant Sood,		Destination: REST, Years: 2,		RelationshipType: HAS_SKILL
+Source:Rahul Kumar,		Destination: REST, Years: 4,		RelationshipType: HAS_SKILL
+Source:Rohan Punia,		Destination: REST, Years: 1,		RelationshipType: HAS_SKILL
+Source:Vamsi Mohan Dosapati,	Destination: REST, Years: 3,		RelationshipType: HAS_SKILL

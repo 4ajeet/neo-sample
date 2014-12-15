@@ -1,0 +1,37 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd         
+    	http://www.springframework.org/schema/data/jpa
+    	http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd">
+
+
+	<bean id="graphDatabaseFactory" class="org.neo4j.graphdb.factory.GraphDatabaseFactory" />
+	
+	<bean id="neoSampleRepository" class="com.pb.neo4j.training.model.NeoSampleRepository" />
+	
+	<bean id="dbWrapper" class="com.pb.neo4j.training.db.Neo4jDatabaseServerWrapper" depends-on="graphDatabaseFactory" init-method="startDatabase" destroy-method="shutdownDatabase">
+		<constructor-arg index="0" value="E:\\Neo4j\\NeoSampleDB"/>
+		<constructor-arg index="1" value="neo4j.properties"/>
+		<constructor-arg index="2" ref="graphDatabaseFactory"/>
+	</bean>
+
+	<context:component-scan base-package="com.pb.neo4j.training.web" />
+	<context:component-scan base-package="com.pb.neo4j.training.model" />
+	
+	<mvc:annotation-driven />
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"	value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>
