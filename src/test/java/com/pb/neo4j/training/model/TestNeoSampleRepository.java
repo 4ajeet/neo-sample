@@ -1,6 +1,7 @@
 package com.pb.neo4j.training.model;
 
 import java.util.List;
+import java.util.Map;
 
 import org.junit.AfterClass;
 
@@ -14,7 +15,7 @@ import com.pb.neo4j.training.db.Neo4jDatabaseServerWrapper;
 
 public class TestNeoSampleRepository {
 	
-	private static NeoSampleRepository repository;
+	private static INeoSampleRepository repository;
 	private static Neo4jDatabaseServerWrapper dbWrapper;
 	private static final String NEO4J_FOLDER = "src/test/NeoSampleDB";
 	//Configure DB as per your requirement
@@ -32,12 +33,28 @@ public class TestNeoSampleRepository {
 	}
 	
 	@Test
-	public void searchByName(){
-		List<Employee> result =  repository.searchByName("Ajeet Singh");
-		assertEquals(1, result.size());
-		assertEquals("Ajeet Singh", result.get(0).getName());
-		assertEquals("Ajeet.Singh@pb.com", result.get(0).getEmail());
-		assertEquals("Sr Advisory Software Engineer", result.get(0).getDesignation());
+	public void findAllBySkillType(){
+		Map<String, Double> result = repository.findAllBySkillType("Java", "Spatial Server");
+		assertEquals(18, result.size());
+		assertEquals(5.0, result.get("Anurag Mudgal"), 0.0);
+		assertEquals(10.0, result.get("Rohan Punia"), 0.0);
+	}
+	
+	
+	@Test
+	public void findAllLivingRegionsByTeam(){
+		List<String> result = repository.findAllLivingRegionsByTeam("Spatial Server");
+		assertEquals(3, result.size());
+		assertTrue(result.contains("Ghaziabad"));
+		assertTrue(result.contains("NOIDA"));
+		assertTrue(result.contains("Delhi"));
+	}
+	
+
+	@Test
+	public void recommandAreaByTeam(){
+		String result = repository.recommandAreaByTeam("Spatial Server");
+		assertEquals("Ghaziabad", result);
 	}
 
 }

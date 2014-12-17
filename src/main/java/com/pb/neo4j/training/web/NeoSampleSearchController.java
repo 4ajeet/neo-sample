@@ -1,6 +1,7 @@
 package com.pb.neo4j.training.web;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.QueryParam;
@@ -39,7 +40,7 @@ public class NeoSampleSearchController {
 	}
 
 	/**
-	 * Example: http://localhost:8080/NeoSampleApp/employee?name=Ajeet%20Singh
+	 * Sample: http://localhost:8080/NeoSampleApp/employee?name=Ajeet%20Singh
 	 * 
 	 * @param name
 	 * @return
@@ -47,15 +48,69 @@ public class NeoSampleSearchController {
 	@RequestMapping(value = "/employee", method=RequestMethod.GET, produces = "application/json")
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
-	public List<Employee> searchByName(@QueryParam("name") String name) {
-		LOG.info("NeoSampleSearchController's searchByName with name:" + name);
+	public List<Employee> findByName(@QueryParam("name") String name) {
+		LOG.info("NeoSampleSearchController's findByName with name:" + name);
 		if(name == null){
-			throw new NeoSampleRuntimeException("'name' param can not be null. \n Example: http://localhost:8080/NeoSampleApp/employee?name=Ajeet%20Singh");
+			throw new NeoSampleRuntimeException("'name' param can not be null. \n Sample: http://localhost:8080/NeoSampleApp/employee?name=Ajeet%20Singh");
 		}
-		return m_neoSampleRepository.searchByName(name);
+		return m_neoSampleRepository.findByName(name);
 		
 	}
 	
+	/**
+	 * Sample: http://localhost:8080/NeoSampleApp/skill?name=Java&team=Spatial Server
+	 * 
+	 * @param name
+	 * @return
+	 */
+	@RequestMapping(value = "/skill", method=RequestMethod.GET, produces = "application/json")
+	@ResponseStatus(HttpStatus.OK)
+	@ResponseBody
+	public Map<String, Double> findAllBySkillType(@QueryParam("name") String name, @QueryParam("name") String team) {
+		LOG.info("NeoSampleSearchController's findByName with name:" + name);
+		if(name == null){
+			throw new NeoSampleRuntimeException("'name' param can not be null. \n Sample: http://localhost:8080/NeoSampleApp/skill?name=Design&team=RJS");
+		}
+		return m_neoSampleRepository.findAllBySkillType(name, team);
+		
+	}
+
+	/**
+	 * Sample: http://localhost:8080/NeoSampleApp/region?team=Spatial Server
+	 * 
+	 * @param name
+	 * @return
+	 */
+	@RequestMapping(value = "/region", method=RequestMethod.GET, produces = "application/json")
+	@ResponseStatus(HttpStatus.OK)
+	@ResponseBody
+	public List<String> findAllLivingRegionsByTeam(@QueryParam("team") String team) {
+		LOG.info("NeoSampleSearchController's findByName with name:" + team);
+		if(team == null){
+			throw new NeoSampleRuntimeException("'name' param can not be null. \n Sample: http://localhost:8080/NeoSampleApp/region?team=Spatial Server");
+		}
+		return m_neoSampleRepository.findAllLivingRegionsByTeam(team);
+		
+	}
+
+	/**
+	 * Sample: http://localhost:8080/NeoSampleApp/recommandArea?team=Spatial Server
+	 * 
+	 * @param name
+	 * @return
+	 */
+	@RequestMapping(value = "/recommandArea", method=RequestMethod.GET, produces = "application/json")
+	@ResponseStatus(HttpStatus.OK)
+	@ResponseBody
+	public String recommandAreaByTeam(@QueryParam("team") String team) {
+		LOG.info("NeoSampleSearchController's findByName with name:" + team);
+		if(team == null){
+			throw new NeoSampleRuntimeException("'name' param can not be null. \n Sample: http://localhost:8080/NeoSampleApp/recommandArea?team=Spatial Server");
+		}
+		return m_neoSampleRepository.recommandAreaByTeam(team);
+		
+	}
+
 	
 	/**
 	 *  The exception handler here is invoked whenever an IOException is thrown 
